@@ -1,4 +1,4 @@
 # flink-action
 Flink样例代码
-1. WordCount
-2. JDBC sink
++ [WordCount](src/main/scala/com/czb/WC.scala)
++ [JDBC sink](src/main/scala/com/czb/LogSinkMySQL.scala)

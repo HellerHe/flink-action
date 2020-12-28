@@ -29,7 +29,7 @@ public class KafkaTest {
         /*String path = this.getClass().getClassLoader().getResource("data.txt").getPath();
         List<String> lines = FileUtils.readLines(new File(path));*/
         for (int i = 0; i < 60; i++) {
-            int userId = RandomUtils.nextInt(1, 1000);
+            int userId = RandomUtils.nextInt(1, 10);
             int productId = RandomUtils.nextInt(1, 1000);
             String data = userId + "," + productId + "," + System.currentTimeMillis() + "," + 1;
             producer.send(new ProducerRecord<String, String>("con","order", data));
